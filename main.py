@@ -1,10 +1,10 @@
 import pymorphy2
 import re
 
+total_words = 0
 verb_count = 0
 adv_count = 0
 adj_count = 0
-total_words = 0
 morph = pymorphy2.MorphAnalyzer()
 reg = re.compile('[^-а-яА-я]')
 with open("text.txt", 'r', encoding='utf-8') as file:

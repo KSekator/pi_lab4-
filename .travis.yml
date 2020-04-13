@@ -4,7 +4,7 @@ python:
   - "3.8"
 addons:
   sonarcloud:
-    organization: "KSekator"
+    organization: "ksekator"
     token: a11ec8ac122d2b04dd26ee22fa23eb3877a8837a
 install:
   - pip install unittest2

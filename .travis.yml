@@ -10,8 +10,11 @@ install:
   - pip install pymorphy2
   - pip install unittest2
   - pip install coveralls
+  - pip install pytest
+  - pip install pytest-cov
 script:
   - python main.py
   - sonar-scanner -X
+  - pytest
 after_success:
   - coveralls

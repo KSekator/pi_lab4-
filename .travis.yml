@@ -9,6 +9,7 @@ addons:
 install:
   - pip install pymorphy2
   - pip install unittest2
+  - pip install coveralls
 script:
   - python main.py
   - sonar-scanner -X

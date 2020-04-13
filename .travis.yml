@@ -10,4 +10,4 @@ install:
   - pip install unittest2
 script:
   - python main.py
-  - sonnar-scanner -X
+  - sonar-scanner -X

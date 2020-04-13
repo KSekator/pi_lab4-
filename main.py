@@ -23,7 +23,6 @@ with open("text.txt", 'r', encoding='utf-8') as file:
             elif 'ADJF' in p.tag or 'ADJS' in p.tag:
                 adj_count += 1
 
-
 print("Всего слов:", total_words)
 print("Количество глаголов:", verb_count, '—', round(verb_count/total_words*100, 2), '%')
 print("Количество наречий:", adv_count, '—', round(adv_count/total_words*100, 2), '%')

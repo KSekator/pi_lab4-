@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.6"
+  - "3.8"
+addons:
+  sonarcloud:
+    organization: "KSekator"
+    token: a11ec8ac122d2b04dd26ee22fa23eb3877a8837a
+install:
+  - pip install unittest2
+script:
+  - python main.py
+  - sonnar-scanner -X

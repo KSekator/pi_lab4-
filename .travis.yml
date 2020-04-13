@@ -11,10 +11,12 @@ install:
   - pip install unittest2
   - pip install coveralls
   - pip install pytest
+  - pip install pytest-pep8
   - pip install pytest-cov
+  - pip install httpretty
 script:
   - python main.py
   - sonar-scanner -X
-  - pytest
+  - py.test coveralls/tests.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 after_success:
   - coveralls

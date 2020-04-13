@@ -13,4 +13,4 @@ script:
   - python main.py
   - sonar-scanner -X
 after_success:
-  - .coveralls.yml
+  - "sbt coveralls"

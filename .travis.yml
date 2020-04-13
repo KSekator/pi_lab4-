@@ -17,6 +17,6 @@ install:
 script:
   - python main.py
   - sonar-scanner -X
-  - py.test coveralls/main.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
+  - coverage run main.py test
 after_success:
   - coveralls
